@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <center><h1>Telangana State Road Transport Corporation</h1></center>
+    <center><h1>General Bus Pass Application</h1></center>
+    <form  action="./response.html">
+    <fieldset>
+            <legend><h3>registration</h3></legend>
+        
+            <label for="name">USERNAME:</label>
+            <input type="text" id="name" required pattern="[[A-Za-z][ ]]+"><br>
+            <label for="">Email:</label>
+            <input type="email" required pattern="[[a-z][0-9]]+@gmail.com" placeholder="abc12@gmail.com"><br>
+            <label for="">phone number:</label>
+            <input type="tel" required  minlength="10" maxlength="10" pattern="[6789][0-9]+">
+            <label for="">Date Of Birth</label>
+            <input type="date" reqired>
+        
+    </fieldset>
+
+    <fieldset>
+        <legend><h3>set password</h3></legend>
+        
+            <label for="">password: </label>
+        <input type="password" required placeholder="Abc@123" pattern="[A-z][a-z]+[!@#$%^&*][0-9]+" minlength="8"> <br>
+        <label for="">re enter password: </label>
+        <input type="password" required title="must be match with password"> <br>  
+        
+    </fieldset>
+
+    <fieldset>
+        <legend><h3>personal details</h3></legend>
+        <label for="">Gender</label>
+        <input type="radio" name="ge">male
+        <input type="radio" name="ge">female
+        <input type="radio" name="ge">transgender
+        <br>
+        
+        <label for="state">state:</label>
+        <select name="state" id="state">
+        <option value="--select--" hidden selected>--select--</option>
+        <option value="Andhra Pradesh">Andhra Pradesh</option>
+        
+        <option value="Telangana">Telangana</option>
+        </select>
+
+        <label for="district">district:</label>
+        <select name="district" id="district">
+            <option value="--select--" hidden selected>--select--</option>
+            <option value="guntur">guntur</option>
+            <option value="vijayawada">vijayawada</option>
+            <option value="east">east</option>
+            <option value="west">west</option>
+            <option value="rangareddy">rabgareddy</option>
+            <option value="hyderabad">hyderabad</option>
+            <option value=""></option>
+            <option value="Siddipet">Siddipet</option>
+            <option value="Suryapet">Suryapet</option>
+        </select>
+    </fieldset>
+
+<center>
+
+    <br>
+           <input type="submit" value="Register">
+
+</center>
+</form>
+</body>
+</html>
